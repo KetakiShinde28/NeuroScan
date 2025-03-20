@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results | NeuroScan</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="../static/logo.png" alt="NeuroScan Logo" class="logo">
+            <span class="logo-text">NeuroScan</span>
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Prediction Results Section -->
+    <div class="result-container">
+        <h2>Prediction Results</h2>
+        <p><strong>Predicted Class:</strong> {{ predicted_class }}</p>
+        <p><strong>Confidence Score:</strong> {{ confidence_score }}%</p>
+        <p><strong>Tumor Severity:</strong> {{ severity }}</p>
+
+        <!-- Display Grad-CAM Heatmap -->
+        <h3>Tumor Localization (Grad-CAM)</h3>
+        <img src="{{ heatmap_url }}" alt="Grad-CAM Heatmap" class="result-image">
+
+        <!-- Upload Another Image -->
+        <a href="/" class="upload-again">Upload Another Image</a>
+    </div>
+
+</body>
+</html>
