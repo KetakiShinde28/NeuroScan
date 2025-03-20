@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | NeuroScan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="NeuroScan Logo" class="logo">
+            <span class="logo-text">NeuroScan</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <div class="auth-container">
+        <h2>Login to NeuroScan</h2>
+        <form id="login-form" action="#" method="post">
+            <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+            <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="register.html">Sign up</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
